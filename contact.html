@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mayfield Global School – Get in touch with our team for admissions, queries and campus visits. Located in Bihar, Bihar.">
+  <title>Contact – Mayfield Global School</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Mayfield Global School – Home">
+        <img src="logo.png" alt="Mayfield Global School School Logo" width="48" height="48">
+        <div class="nav-logo-text">
+          <span class="name">Mayfield Global School</span>
+          <span class="sub">KNOWLEDGE IS POWER</span>
+        </div>
+      </a>
+     <ul class="nav-links" role="menubar">
+        <li><a href="index.html"      role="menuitem" class="active">Home</a></li>
+        <li><a href="about.html"      role="menuitem">About Us</a></li>
+        <li><a href="academics.html"  role="menuitem">Academics</a></li>
+        <li><a href="admissions.html" role="menuitem">Admissions</a></li>
+        <li><a href="facilities.html" role="menuitem">Facilities</a></li>
+        <li><a href="gallery.html"    role="menuitem">Gallery</a></li>
+        <li><a href="Mandatory_Public_Disclosure.pdf"    role="menuitem">Mandatory Disclosure</a></li>
+        
+        
+      </ul>
+
+      
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="min-height:280px;" aria-labelledby="contact-hero-heading">
+  <div class="page-hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="page-hero-content" style="padding:72px 0;">
+      <h1 id="contact-hero-heading">Get in <span class="gold">Touch</span></h1>
+      <p>We'd love to hear from you. Reach out for admissions, campus tours, or any other enquiries.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>›</span>
+        <span aria-current="page">Contact</span>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section style="padding:var(--section-py) 0;" aria-labelledby="contact-section-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;" class="contact-main-grid">
+
+      <!-- Info + Map -->
+      <div class="fade-up">
+        <h2 class="section-title" id="contact-section-heading">Contact <span>Information</span></h2>
+        <p style="color:var(--gray-500);margin-bottom:32px;line-height:1.8;">Our team is available Monday to Saturday, 8:00 AM to 4:00 PM to answer all your queries.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📍</div>
+            <div class="contact-card-info">
+              <div class="label">Address</div>
+              <div class="value" style="font-size:.88rem;line-height:1.5;">Sarai - Neoraganj Rd, Ticketpur, Rewa, Baluwa, Bihar  – 801113</div>
+            </div>
+          </div>
+          <a href="tel:+919876543210" class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📞</div>
+            <div class="contact-card-info">
+              <div class="label">Phone</div>
+              <div class="value">8409975011</div>
+            </div>
+          </a>
+          <a href="mailto:info@mayfieldglobalschool.com" class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">✉️</div>
+            <div class="contact-card-info">
+              <div class="label">Email</div>
+              <div class="value">info@mayfieldglobalschool.com</div>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">🕐</div>
+            <div class="contact-card-info">
+              <div class="label">Office Hours</div>
+              <div class="value" style="font-size:.88rem;">Mon–Sat: 8:00 AM – 4:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap" style="margin-top:28px;">
+          <img src="Screenshot 2026-02-27 185353.png"
+               alt="Map of Mayfield Global School location in Bihar Bihar" loading="lazy">
+          <a href="https://maps.app.goo.gl/iTXkag1vo1V9a9dw7" target="_blank" rel="noopener noreferrer" class="map-overlay-btn">
+            📍 View on Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="fade-up delay-2">
+        <div class="admission-form-card" style="position:static;">
+          <form id="contactForm" novalidate>
+            <div class="form-card-title">Send Us a Message</div>
+            <p class="form-card-desc">We'll respond within one business day.</p>
+
+            <div class="form-group">
+              <label for="contactName">Your Name <span class="req" aria-hidden="true">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">👤</span>
+                <input type="text" id="contactName" name="from_name" class="form-control" placeholder="Your full name" required aria-required="true">
+              </div>
+              <span class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">✉️</span>
+                <input type="email" id="contactEmail" name="from_email" class="form-control" placeholder="your@email.com" required aria-required="true">
+              </div>
+              <span class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactPhone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">📞</span>
+                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="8409975011" required aria-required="true">
+              </div>
+              <span class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              
+              <label for="contactSubject">Subject</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">📌</span>
+                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="Admission Enquiry / General">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea
+                id="contactMessage" name="message"
+                class="form-control no-icon"
+                placeholder="Write your message here..."
+                rows="5" required aria-required="true"
+                style="resize:vertical;padding:12px 14px;"
+              ></textarea>
+              <span class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px;" aria-label="Send message">
+              Send Message →
+            </button>
+          </form>
+
+          <div class="form-success-msg" id="contactSuccessMsg" role="status" aria-live="polite">
+            <div class="success-circle" aria-hidden="true">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We will get back to you within one business day.</p>
+            <a href="index.html" class="btn btn-primary" style="margin-top:24px;">Back to Home</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="contact-cta-heading">
+  <div class="container">
+    <div class="cta-banner-content fade-up">
+      <h2 id="contact-cta-heading">Ready to Enroll Your Child?</h2>
+      <p>Admissions are open for the upcoming academic session. Apply today and secure your child's future.</p>
+      <div class="cta-banner-btns">
+        <a href="admissions.html" class="btn btn-gold">Apply for Admission</a>
+        <a href="facilities.html" class="btn btn-outline">Explore Campus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Site Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="logo.png" alt="Mayfield Global School Logo" width="40" height="40">
+          <span class="fn">Mayfield Global School</span>
+        </div>
+        <p class="footer-desc">Empowering students with knowledge, character, and skills for a brighter future.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Info</h4>
+        <div class="footer-contact-item"><span>📍</span><span>Sarai - Neoraganj Rd, Ticketpur, Rewa, Baluwa, Bihar  – 801113</span></div>
+        <div class="footer-contact-item"><span>📞</span><a href="tel:+918409975011" style="color:inherit;">8409975011</a></div>
+        <div class="footer-contact-item"><span>✉️</span><a href="mailto:info@mayfieldglobalschool.com" style="color:inherit;">info@mayfieldglobalschool.com</a></div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Stay Updated</h4>
+        <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed!','success')">
+          <input type="email" placeholder="Email address" aria-label="Newsletter email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>© 2024 Mayfield Global School. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="globalToast" class="toast" role="alert" aria-live="polite"></div>
+<script src="script.js"></script>
+<script>
+// Contact form handler
+const contactForm = document.getElementById('contactForm');
+const contactSuccessMsg = document.getElementById('contactSuccessMsg');
+const EMAILJS_CONFIG_CONTACT = {
+  publicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
+  serviceId: 'YOUR_SERVICE_ID',
+  templateId: 'YOUR_CONTACT_TEMPLATE_ID',
+};
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let valid = true;
+    ['contactName','contactEmail','contactPhone','contactMessage'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el?.value.trim()) {
+        const err = el?.closest('.form-group')?.querySelector('.error-msg');
+        if (err) err.textContent = 'This field is required.';
+        el?.classList.add('error');
+        valid = false;
+      }
+    });
+    if (!valid) return;
+    const btn = contactForm.querySelector('[type="submit"]');
+    btn.innerHTML = '⏳ Sending...'; btn.disabled = true;
+    try {
+      if (typeof emailjs !== 'undefined' && EMAILJS_CONFIG_CONTACT.publicKey !== 'YOUR_EMAILJS_PUBLIC_KEY') {
+        await emailjs.sendForm(EMAILJS_CONFIG_CONTACT.serviceId, EMAILJS_CONFIG_CONTACT.templateId, contactForm, EMAILJS_CONFIG_CONTACT.publicKey);
+      } else {
+        await new Promise(r => setTimeout(r, 1000));
+      }
+      contactForm.style.display = 'none';
+      contactSuccessMsg.classList.add('show');
+      showToast('Message sent successfully!', 'success');
+    } catch(err) {
+      showToast('Failed to send. Please call us directly.', 'error');
+      btn.innerHTML = 'Send Message →'; btn.disabled = false;
+    }
+  });
+}
+</script>
+</body>
+</html>
